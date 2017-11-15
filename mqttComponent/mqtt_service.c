@@ -131,7 +131,7 @@ static void mqttService_SigTermEventHandler(int sigNum)
   mqttClient_disconnectData(&mqttClient);
 }
 
-__inline mqttClient_t* mqttService_getClient(void)
+__inline mqttClient_t* mqttMain_getClient(void)
 {
   return &mqttClient;
 };

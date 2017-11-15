@@ -57,7 +57,7 @@ FUNCTION SendJson
  * Get mqtt connection state - useful for manual query
  */
 //--------------------------------------------------------------------------------------------------
-FUNCTION int GetConnectionState
+FUNCTION int32 GetConnectionState
 (
 );
 
@@ -80,7 +80,7 @@ HANDLER SessionStateHandler
 //--------------------------------------------------------------------------------------------------
 EVENT SessionState
 (
-    handler           SessionStateHandler
+    SessionStateHandler handler
 );
 
 //--------------------------------------------------------------------------------------------------
@@ -103,5 +103,5 @@ HANDLER IncomingMessageHandler
 //--------------------------------------------------------------------------------------------------
 EVENT IncomingMessage
 (
-    handler IncomingMessageHandler
+    IncomingMessageHandler handler
 );
